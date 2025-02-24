@@ -31,7 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable}  antialiased`}>
         <ScaryBackground />
+
         <Navbar />
+        <div className="pt-20"></div>
         {children}
       </body>
     </html>
