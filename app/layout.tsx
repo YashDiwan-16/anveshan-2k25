@@ -3,6 +3,7 @@ import { Creepster } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/global/navbar";
 import ScaryBackground from "@/components/global/scarybg";
+import Footer from "@/components/global/footer";
 
 const geistSans = Creepster({
   weight: "400",
@@ -33,8 +34,10 @@ export default function RootLayout({
         <ScaryBackground />
 
         <Navbar />
+
         <div className="pt-20"></div>
         {children}
+        <Footer />
       </body>
     </html>
   );

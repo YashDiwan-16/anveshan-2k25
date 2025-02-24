@@ -12,8 +12,8 @@ const SpookyLogo = () => {
       <Image
         src="/logo.png"
         alt="TechFest 2025 Spooky Logo"
-        width={300}
-        height={300}
+        width={475}
+        height={475}
         className="drop-shadow-[0_0_15px_rgba(255,0,0,0.7)]"
       />
     </motion.div>

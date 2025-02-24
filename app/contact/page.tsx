@@ -64,7 +64,7 @@ export default function HorrorContactPage() {
         {/* Creepy Decorative Elements */}
         <div className="mt-6 text-center">
           <p className="text-gray-400 italic">
-            "The spirits are waiting... dare to reach out?"
+            &quot;The spirits are waiting... dare to reach out?&quot;
           </p>
           <Button className="mt-4 w-full bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-lg shadow-md transform hover:scale-105 transition-all duration-300">
             Summon Us
