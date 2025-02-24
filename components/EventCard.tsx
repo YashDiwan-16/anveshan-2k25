@@ -9,9 +9,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface Event {
   id: number;
+  slug: string;
   title: string;
   description: string;
   date: string;
@@ -44,9 +46,11 @@ export default function EventCard({ event, index }: EventCardProps) {
           <p className="text-sm text-gray-400 mt-2">{event.date}</p>
         </CardContent>
         <CardFooter>
-          <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-            Register
-          </Button>
+          <Link href={`/events/${event.slug}`} className="w-full">
+            <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+              Register
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </motion.div>
