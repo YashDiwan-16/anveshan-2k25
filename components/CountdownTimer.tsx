@@ -12,32 +12,33 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-10-31T00:00:00").getTime();
+    const targetDate = new Date("2025-03-07T00:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const difference = targetDate - now;
 
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-      setTimeLeft({ days, hours, minutes, seconds });
-
       if (difference < 0) {
         clearInterval(interval);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        return;
       }
+
+      setTimeLeft({
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        ),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000),
+      });
     }, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="flex space-x-8 text-4xl font-mono text-red-500">
+    <div className="flex flex-wrap justify-center gap-6 text-center text-red-500">
       {Object.entries(timeLeft).map(([unit, value]) => (
         <motion.div
           key={unit}
@@ -57,10 +58,12 @@ const CountdownTimer = () => {
             repeatType: "reverse",
           }}
         >
-          <span className="text-6xl font-bold">
+          <span className="text-5xl sm:text-6xl md:text-7xl font-bold">
             {value.toString().padStart(2, "0")}
           </span>
-          <span className="text-sm uppercase">{unit}</span>
+          <span className="text-xs sm:text-sm md:text-base uppercase">
+            {unit}
+          </span>
         </motion.div>
       ))}
     </div>

@@ -10,13 +10,13 @@ export const events = [
      coordinators:["Vedant Rajhans" , "Krishna Kalaspurkar" , "Pushkaraj Gaikwad"],
      unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
      paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link"
-     
+     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     whatsapp:"https://chat.whatsapp.com/Dq1wv4h029w6uCUATlh7fN"
     },
     {
       id: 2,
       slug: "sambhashini",
-      title: "Sambhashini",
+      title: "Sambhashani",
       description:
         "Survive a simulated zombie outbreak! Learn essential skills and compete in challenges to be the last one standing.",
       date: "October 29, 2025",
@@ -24,7 +24,8 @@ export const events = [
       coordinators:["Harshal Suroshe" , "Suyog Chavan" , "Om Sagar"],
       unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
      paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link"
+     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     whatsapp:"https://chat.whatsapp.com/EarBpW7QeLKIOW3czzIXkC"
      
     },
     {
@@ -38,8 +39,8 @@ export const events = [
       coordinators:["Lubdha Shirode" , "Prathamesh Nathe"],
       unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
       paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link"
-      
+      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+      whatsapp:"https://chat.whatsapp.com/FP0mzAAi9bcICBGJdJJu14"
     },
     {
       id: 4,
@@ -52,7 +53,8 @@ export const events = [
       coordinators:["Parth Ghadole" , "Aditi Chavan"],
       unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
      paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link"
+     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     whatsapp:"https://chat.whatsapp.com/BkKJ3KXJdWgAuI5gVUpXU6"
      
 
     },
@@ -67,7 +69,8 @@ export const events = [
       coordinators:["Rishita Awasthi" , "Krsihna Patil"],
       unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
      paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link"
+     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     whatsapp:"https://chat.whatsapp.com/F4ksbuYFr88HEDtTwSK9zn"
      
 
     },
