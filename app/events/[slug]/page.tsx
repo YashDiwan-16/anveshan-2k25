@@ -48,7 +48,7 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6">
               <a href={event.unpaidformlink} target="_blank">
-                <button className="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/20 hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                <button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-orange-500/20 hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -68,7 +68,7 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
               </a>
 
               <a href={event.paidformlink} target="_blank">
-                <button className="w-full sm:w-auto bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-500 hover:to-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-yellow-500/20 hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                <button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-orange-500/20 hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -104,6 +104,25 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
                     />
                   </svg>
                   Rule Book
+                </button>
+              </a>
+              <a href={event.whatsapp} target="_blank">
+                <button className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/20 hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                  WhatsApp
                 </button>
               </a>
             </div>

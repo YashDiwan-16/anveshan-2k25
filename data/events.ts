@@ -5,11 +5,11 @@ export const events = [
       title: "Chakava",
       description:
         "Can you escape the horrors that lurk within? Test your wits and courage in our terrifying haunted house!",
-      date: "October 28, 2025",
+      date: "March 7 and 8, 2025",
       image: "/events/chakava.jpg",
      coordinators:["Vedant Rajhans" , "Krishna Kalaspurkar" , "Pushkaraj Gaikwad"],
-     unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
+     unpaidformlink:"https://forms.gle/pLwf7htoBTohJbj69",
+     paidformlink:"https://forms.gle/bVs1AhjXY5LgbCvCA",
      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
      whatsapp:"https://chat.whatsapp.com/Dq1wv4h029w6uCUATlh7fN"
     },
@@ -19,11 +19,11 @@ export const events = [
       title: "Sambhashani",
       description:
         "Survive a simulated zombie outbreak! Learn essential skills and compete in challenges to be the last one standing.",
-      date: "October 29, 2025",
+      date: "March 8, 2025",
       image: "/events/sambhashini.jpg",
       coordinators:["Harshal Suroshe" , "Suyog Chavan" , "Om Sagar"],
-      unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
+      unpaidformlink:"https://forms.gle/mjoTptpPZ9qZmrdh6",
+     paidformlink:"https://forms.gle/x6jQ9ou2PipmNrDE8",
      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
      whatsapp:"https://chat.whatsapp.com/EarBpW7QeLKIOW3czzIXkC"
      
@@ -34,25 +34,25 @@ export const events = [
       title: "Logic Lamps",
       description:
         "Join professional ghost hunters for a night of spine-chilling paranormal investigation in a real haunted location!",
-      date: "October 30, 2025",
+      date: "March 8, 2025",
       image: "/events/logiclamp.jpg",
       coordinators:["Lubdha Shirode" , "Prathamesh Nathe"],
-      unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-      paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
+      unpaidformlink:"https://forms.gle/WWkh4hRHJLkMSwp9A",
+      paidformlink:"https://forms.gle/GzMjashzWXDp4AA39",
       rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
       whatsapp:"https://chat.whatsapp.com/FP0mzAAi9bcICBGJdJJu14"
     },
     {
       id: 4,
-      slug: "ML Wars",
-      title: "Horror Film Festival",
+      slug: "MLWars",
+      title: "ML Wars",
       description:
         "Experience a marathon of the most terrifying horror films, including premieres and classic favorites.",
-      date: "October 31, 2025",
+      date: "March 7, 2025",
       image: "/events/mlwars.jpg",
       coordinators:["Parth Ghadole" , "Aditi Chavan"],
-      unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
+      unpaidformlink:"https://forms.gle/bPTnwAGkZcaadbYc7",
+     paidformlink:"https://forms.gle/F87LbA86w7X1scpQA",
      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
      whatsapp:"https://chat.whatsapp.com/BkKJ3KXJdWgAuI5gVUpXU6"
      
@@ -62,13 +62,12 @@ export const events = [
       id: 5,
       slug: "cybercanvas",
       title: "Cyber Canvas",
-      
       description: "Show off your most horrifying and creative costumes in our grand Halloween costume contest!",
-      date: "October 31, 2025",
+      date: "March 7, 2025",
       image: "/events/cybercanvas.jpg",
       coordinators:["Rishita Awasthi" , "Krsihna Patil"],
-      unpaidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
-     paidformlink:"https://docs.google.com/forms/d/e/1FAIpQLSePwTIkM4INomQ2qSsXyonIlo-94AhUpsT0CO1kejwQny2oPA/viewform?usp=header",
+      unpaidformlink:"https://forms.gle/91b8VHxZguDyxPvD6",
+     paidformlink:"https://forms.gle/47XaDajsQtMqCuP28",
      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
      whatsapp:"https://chat.whatsapp.com/F4ksbuYFr88HEDtTwSK9zn"
      
