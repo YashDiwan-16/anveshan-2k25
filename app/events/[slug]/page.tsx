@@ -32,6 +32,20 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
               {event.description}
             </p>
 
+            {/* Event Coordinators */}
+            {event.coordinators && (
+              <div className="text-gray-300 mt-4">
+                <h2 className="text-xl font-semibold mb-2">
+                  Event Coordinators:
+                </h2>
+                <ul className="list-disc list-inside">
+                  {event.coordinators.map((coordinator, index) => (
+                    <li key={index}>{coordinator}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             <div className="w-full max-w-2xl mx-auto bg-zinc-800/50 border border-red-800/50 rounded-lg p-4 shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
                 <div className="flex items-center gap-2">
@@ -48,93 +62,30 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
               </div>
             </div>
 
+            {/* Buttons */}
             <div className="flex flex-wrap gap-4 justify-center items-center mt-6">
               {[
                 {
                   link: event.unpaidformlink,
                   text: "PCCOE Registration",
-                  color: "orange",
-                  icon: (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  ),
+                  color: "bg-orange-600 hover:bg-orange-500",
                 },
                 {
                   link: event.paidformlink,
                   text: "Non-PCCOE Registration",
-                  color: "orange",
-                  icon: (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  ),
+                  color: "bg-orange-600 hover:bg-orange-500",
                 },
                 {
                   link: event.rulebook,
                   text: "Rule Book",
-                  color: "red",
-                  icon: (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 19l9 2V5l-9-2-9 2v14l9 2z"
-                      />
-                    </svg>
-                  ),
+                  color: "bg-red-600 hover:bg-red-500",
                 },
                 {
                   link: event.whatsapp,
                   text: "WhatsApp",
-                  color: "green",
-                  icon: (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  ),
+                  color: "bg-green-600 hover:bg-green-500",
                 },
-              ].map(({ link, text, color, icon }, index) => (
+              ].map(({ link, text, color }, index) => (
                 <a
                   href={link}
                   target="_blank"
@@ -142,9 +93,8 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
                   className="w-full sm:w-auto"
                 >
                   <button
-                    className={`w-full sm:w-auto bg-${color}-600 hover:bg-${color}-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-${color}-500/20 hover:scale-105 active:scale-95 flex items-center justify-center gap-2`}
+                    className={`w-full sm:w-auto ${color} text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 flex items-center justify-center gap-2`}
                   >
-                    {icon}
                     {text}
                   </button>
                 </a>
