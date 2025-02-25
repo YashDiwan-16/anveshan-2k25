@@ -32,20 +32,6 @@ const EventSlug = ({ params }: { params: { slug: string } }) => {
               {event.description}
             </p>
 
-            {/* Event Coordinators */}
-            {event.coordinators && (
-              <div className="text-gray-300 mt-4">
-                <h2 className="text-xl font-semibold mb-2">
-                  Event Coordinators:
-                </h2>
-                <ul className="list-disc list-inside">
-                  {event.coordinators.map((coordinator, index) => (
-                    <li key={index}>{coordinator}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
             <div className="w-full max-w-2xl mx-auto bg-zinc-800/50 border border-red-800/50 rounded-lg p-4 shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
                 <div className="flex items-center gap-2">
