@@ -13,7 +13,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="z-10 flex flex-col items-center space-y-6"
+        className="z-10 flex flex-col items-center space-y-6 pb-16"
       >
         <SpookyLogo />
         <GlowingTitle />
