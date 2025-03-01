@@ -8,7 +8,7 @@ export const events = [
       image: "/events/chakava.png",
      unpaidformlink:"https://forms.gle/pLwf7htoBTohJbj69",
      paidformlink:"https://forms.gle/bVs1AhjXY5LgbCvCA",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     rulebook:"https://drive.google.com/file/d/1r77ZJrRbnifTBxNPjMvXX2V7pzpToqXK/view?usp=sharing",
      whatsapp:"https://chat.whatsapp.com/Dq1wv4h029w6uCUATlh7fN"
     },
     {
@@ -42,7 +42,7 @@ export const events = [
       slug: "MLWars",
       title: "ML Wars",
       description:" A high-stakes AI battle where participants test their ML skills by building and evaluating models in a competitive setting",
-      date: "March 7, 2025",
+      date: "March 7, 2025",  
       image: "/events/mlwars.png",
       unpaidformlink:"https://forms.gle/bPTnwAGkZcaadbYc7",
      paidformlink:"https://forms.gle/F87LbA86w7X1scpQA",
@@ -60,7 +60,7 @@ export const events = [
       image: "/events/cybercanvas.png",
       unpaidformlink:"https://forms.gle/91b8VHxZguDyxPvD6",
      paidformlink:"https://forms.gle/47XaDajsQtMqCuP28",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     rulebook:"https://drive.google.com/file/d/1yQv_cfS9jWueDmSWHVT8fN4oRFPYrZc6/view?usp=drive_link",
      whatsapp:"https://chat.whatsapp.com/F4ksbuYFr88HEDtTwSK9zn"
      
 

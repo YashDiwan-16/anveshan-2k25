@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import GlowingTitle from "@/components/GlowingTitle";
 import CountdownTimer from "@/components/CountdownTimer";
-import EerieCarousel from "@/components/EerieCarousel";
+
 import SpookyLogo from "@/components/SpookyLogo";
+import { CarouselDemo } from "@/components/HomeCourosel";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center relative overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -18,7 +19,7 @@ export default function Home() {
         <SpookyLogo />
         <GlowingTitle />
         <CountdownTimer />
-        <EerieCarousel />
+        <CarouselDemo />
       </motion.div>
     </main>
   );
