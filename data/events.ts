@@ -20,7 +20,7 @@ export const events = [
       image: "/events/sambhashini.png",
       unpaidformlink:"https://forms.gle/mjoTptpPZ9qZmrdh6",
      paidformlink:"https://forms.gle/x6jQ9ou2PipmNrDE8",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     rulebook:"https://drive.google.com/file/d/16YA1Zt_VRnPYdVwEj4dtEAKR-G_B0w10/view?usp=sharing",
      whatsapp:"https://chat.whatsapp.com/EarBpW7QeLKIOW3czzIXkC"
      
     },
@@ -34,7 +34,7 @@ export const events = [
       image: "/events/logiclamp.png",
       unpaidformlink:"https://forms.gle/WWkh4hRHJLkMSwp9A",
       paidformlink:"https://forms.gle/GzMjashzWXDp4AA39",
-      rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+      rulebook:"https://drive.google.com/file/d/1ktBbQyKvin7OXdSM4ksUYovt-xm2JUKJ/view?usp=drive_link",
       whatsapp:"https://chat.whatsapp.com/FP0mzAAi9bcICBGJdJJu14"
     },
     {
@@ -46,7 +46,7 @@ export const events = [
       image: "/events/mlwars.png",
       unpaidformlink:"https://forms.gle/bPTnwAGkZcaadbYc7",
      paidformlink:"https://forms.gle/F87LbA86w7X1scpQA",
-     rulebook:"https://drive.google.com/file/d/1IBrOGV-xoPipJG3UP5Ylf_WMTSwFE3km/view?usp=drive_link",
+     rulebook:"https://drive.google.com/file/d/1TCkEd29PP2xlI93nburyaFxvbkCuPL3h/view?usp=drive_link",
      whatsapp:"https://chat.whatsapp.com/BkKJ3KXJdWgAuI5gVUpXU6"
      
 
