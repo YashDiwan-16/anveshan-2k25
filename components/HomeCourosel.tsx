@@ -18,13 +18,13 @@ export function CarouselDemo() {
     {
       title: "Logic Lamps",
       button: "Explore Logic Lamps",
-      link: "/events/logiclamp",
+      link: "/events/logiclamps",
       src: "/eventlogos/logiclamps.png",
     },
     {
       title: "ML Wars",
       button: "Explore ML Wars",
-      link: "/events/mlwars",
+      link: "/events/MLWars",
       src: "/eventlogos/MLWars.png",
     },
     {
