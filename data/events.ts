@@ -3,8 +3,7 @@ export const events = [
       id: 1,
       slug: "chakava",
       title: "Chakava",
-      description:
-        "Can you escape the horrors that lurk within? Test your wits and courage in our terrifying haunted house!",
+      description:" Chakava is our most prestigious and thrilling event, inspired by the valor and strategy of Chhatrapati Shivaji Maharaj’s warriors. This immersive challenge tests intelligence, strategy, and teamwork through a historical adventure.",
       date: "March 7 and 8, 2025",
       image: "/events/chakava.png",
      unpaidformlink:"https://forms.gle/pLwf7htoBTohJbj69",
@@ -16,8 +15,7 @@ export const events = [
         id: 2,
       slug: "sambhashini",
       title: "Sambhashani",
-      description:
-        "Survive a simulated zombie outbreak! Learn essential skills and compete in challenges to be the last one standing.",
+      description:"A vibrant linguistic challenge celebrating the beauty of Marathi proverbs and description based games ",
       date: "March 8, 2025",
       image: "/events/sambhashini.png",
       unpaidformlink:"https://forms.gle/mjoTptpPZ9qZmrdh6",
@@ -31,7 +29,7 @@ export const events = [
       slug: "logiclamps",
       title: "Logic Lamps",
       description:
-        "Join professional ghost hunters for a night of spine-chilling paranormal investigation in a real haunted location!",
+        " A coding event where teams crack programming puzzles and logical challenges to unlock the legendary Logic Lamps",
       date: "March 8, 2025",
       image: "/events/logiclamp.png",
       unpaidformlink:"https://forms.gle/WWkh4hRHJLkMSwp9A",
@@ -43,8 +41,7 @@ export const events = [
       id: 4,
       slug: "MLWars",
       title: "ML Wars",
-      description:
-        "Experience a marathon of the most terrifying horror films, including premieres and classic favorites.",
+      description:" A high-stakes AI battle where participants test their ML skills by building and evaluating models in a competitive setting",
       date: "March 7, 2025",
       image: "/events/mlwars.png",
       unpaidformlink:"https://forms.gle/bPTnwAGkZcaadbYc7",
@@ -58,7 +55,7 @@ export const events = [
       id: 5,
       slug: "cybercanvas",
       title: "Cyber Canvas",
-      description: "Show off your most horrifying and creative costumes in our grand Halloween costume contest!",
+      description: "Teams develop a fully functional website within a given time limit",
       date: "March 7, 2025",
       image: "/events/cybercanvas.png",
       unpaidformlink:"https://forms.gle/91b8VHxZguDyxPvD6",
