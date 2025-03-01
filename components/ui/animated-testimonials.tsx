@@ -1,5 +1,9 @@
-import React, { useEffect, useState } from "react";
+"use client";
+
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type Testimonial = {
   quote: string;
@@ -7,58 +11,25 @@ type Testimonial = {
   designation: string;
   src: string;
 };
-
-// Default testimonials data
-const defaultTestimonials: Testimonial[] = [
-  {
-    quote: "The haunting whispers echo through the ancient halls...",
-    name: "Victoria Blackwood",
-    designation: "Ghost Whisperer",
-    src: "/api/placeholder/500/500",
-  },
-  {
-    quote: "In the depths of darkness, we found unspeakable truths...",
-    name: "Edgar Ravenscroft",
-    designation: "Paranormal Investigator",
-    src: "/api/placeholder/500/500",
-  },
-  {
-    quote: "The shadows hold secrets that mortals dare not seek...",
-    name: "Isabella Nightshade",
-    designation: "Medium",
-    src: "/api/placeholder/500/500",
-  },
-];
-
-export const HauntedTestimonials = ({
-  testimonials = defaultTestimonials,
+export const AnimatedTestimonials = ({
+  testimonials,
   autoplay = false,
 }: {
-  testimonials?: Testimonial[];
+  testimonials: Testimonial[];
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
-  const [isGlitching, setIsGlitching] = useState(false);
-  const currentTestimonials =
-    testimonials.length > 0 ? testimonials : defaultTestimonials;
 
   const handleNext = () => {
-    setIsGlitching(true);
-    setTimeout(() => {
-      setActive((prev) => (prev + 1) % currentTestimonials.length);
-      setIsGlitching(false);
-    }, 300);
+    setActive((prev) => (prev + 1) % testimonials.length);
   };
 
   const handlePrev = () => {
-    setIsGlitching(true);
-    setTimeout(() => {
-      setActive(
-        (prev) =>
-          (prev - 1 + currentTestimonials.length) % currentTestimonials.length
-      );
-      setIsGlitching(false);
-    }, 300);
+    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const isActive = (index: number) => {
+    return index === active;
   };
 
   useEffect(() => {
@@ -68,138 +39,123 @@ export const HauntedTestimonials = ({
     }
   }, [autoplay]);
 
-  // const randomDistortion = () => ({
-  //   x: Math.random() * 10 - 5,
-  //   y: Math.random() * 10 - 5,
-  //   rotate: Math.random() * 5 - 2.5,
-  //   scale: 0.95 + Math.random() * 0.1,
-  // });
-
+  const randomRotateY = () => {
+    return Math.floor(Math.random() * 21) - 10;
+  };
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto px-4 md:px-8 lg:px-12 py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/30 pointer-events-none" />
-
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
+    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
+      <div className="relative grid grid-cols-1 md:grid-cols-2  gap-20">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
-              {currentTestimonials.map((testimonial, index) => (
+              {testimonials.map((testimonial, index) => (
                 <motion.div
-                  key={`${testimonial.src}-${index}`}
+                  key={testimonial.src}
                   initial={{
                     opacity: 0,
                     scale: 0.9,
-                    rotateY: 180,
-                    filter: "brightness(0.7) contrast(1.2)",
+                    z: -100,
+                    rotate: randomRotateY(),
                   }}
                   animate={{
-                    opacity: index === active ? 1 : 0.5,
-                    scale:
-                      (index === active ? 1 : 0.95) *
-                      (0.95 + Math.random() * 0.1),
-                    rotateY: index === active ? 0 : 180,
-                    filter: [
-                      "brightness(0.7) contrast(1.2)",
-                      "brightness(1) contrast(1)",
-                      "brightness(0.7) contrast(1.2)",
-                    ],
-                    x: Math.random() * 10 - 5,
-                    y: Math.random() * 10 - 5,
-                    rotate: Math.random() * 5 - 2.5,
+                    opacity: isActive(index) ? 1 : 0.7,
+                    scale: isActive(index) ? 1 : 0.95,
+                    z: isActive(index) ? 0 : -100,
+                    rotate: isActive(index) ? 0 : randomRotateY(),
+                    zIndex: isActive(index)
+                      ? 999
+                      : testimonials.length + 2 - index,
+                    y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{
                     opacity: 0,
                     scale: 0.9,
-                    rotateY: -180,
-                    filter: "brightness(0.7) contrast(1.2)",
+                    z: 100,
+                    rotate: randomRotateY(),
                   }}
                   transition={{
-                    duration: 0.6,
-                    ease: [0.45, 0.05, 0.55, 0.95],
+                    duration: 0.4,
+                    ease: "easeInOut",
                   }}
-                  className="absolute inset-0 shadow-[0_0_15px_rgba(255,0,0,0.3)]"
+                  className="absolute inset-0 origin-bottom"
                 >
-                  <img
+                  <Image
                     src={testimonial.src}
                     alt={testimonial.name}
-                    className="h-full w-full rounded-lg object-cover object-center 
-                             transition-all duration-300
-                             hover:filter hover:brightness-75 hover:contrast-125"
-                  />
-                  <div
-                    className={`absolute inset-0 mix-blend-color-dodge bg-gradient-to-t 
-                                 from-red-900/20 to-transparent opacity-0 
-                                 transition-opacity duration-300 
-                                 ${isGlitching ? "opacity-100" : ""}`}
+                    width={500}
+                    height={500}
+                    draggable={false}
+                    className="h-full w-full rounded-3xl object-cover object-center"
                   />
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
         </div>
-
         <div className="flex justify-between flex-col py-4">
           <motion.div
             key={active}
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -20, opacity: 0 }}
-            className="relative"
+            initial={{
+              y: 20,
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+            }}
+            exit={{
+              y: -20,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 0.2,
+              ease: "easeInOut",
+            }}
           >
-            <h3
-              className="text-2xl font-serif font-bold text-red-600 mb-2
-                         [text-shadow:_0_0_10px_rgb(220_38_38_/_40%)]"
-            >
-              {currentTestimonials[active].name}
+            <h3 className="text-2xl font-bold text-white">
+              {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-400 font-serif italic">
-              {currentTestimonials[active].designation}
+            <p className="text-sm text-neutral-500">
+              {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-300 mt-8 font-serif">
-              {currentTestimonials[active].quote
-                .split(" ")
-                .map((word, index) => (
-                  <motion.span
-                    key={index}
-                    initial={{
-                      filter: "blur(10px)",
-                      opacity: 0,
-                      y: 5,
-                    }}
-                    animate={{
-                      filter: "blur(0px)",
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      duration: 0.3,
-                      ease: "easeOut",
-                      delay: 0.03 * index,
-                    }}
-                    className="inline-block"
-                  >
-                    {word}&nbsp;
-                  </motion.span>
-                ))}
+            <motion.p className="text-lg mt-8 text-neutral-300">
+              {testimonials[active].quote.split(" ").map((word, index) => (
+                <motion.span
+                  key={index}
+                  initial={{
+                    filter: "blur(10px)",
+                    opacity: 0,
+                    y: 5,
+                  }}
+                  animate={{
+                    filter: "blur(0px)",
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.2,
+                    ease: "easeInOut",
+                    delay: 0.02 * index,
+                  }}
+                  className="inline-block"
+                >
+                  {word}&nbsp;
+                </motion.span>
+              ))}
             </motion.p>
           </motion.div>
-
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
-              className="h-8 w-8 rounded-full bg-red-950 hover:bg-red-900 
-                       transition-colors duration-300 flex items-center justify-center 
-                       group border border-red-800"
+              className="h-7 w-7 rounded-full bg-neutral-800 flex items-center justify-center group/button"
             >
-              <span className="text-red-500 group-hover:text-red-400">←</span>
+              <IconArrowLeft className="h-5 w-5 text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
             </button>
             <button
               onClick={handleNext}
-              className="h-8 w-8 rounded-full bg-red-950 hover:bg-red-900 
-                       transition-colors duration-300 flex items-center justify-center 
-                       group border border-red-800"
+              className="h-7 w-7 rounded-full bg-neutral-800 flex items-center justify-center group/button"
             >
-              <span className="text-red-500 group-hover:text-red-400">→</span>
+              <IconArrowRight className="h-5 w-5 text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
             </button>
           </div>
         </div>
@@ -207,5 +163,3 @@ export const HauntedTestimonials = ({
     </div>
   );
 };
-
-export default HauntedTestimonials;

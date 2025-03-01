@@ -58,7 +58,7 @@ const Navbar = () => {
                   <Menu className="h-6 w-6 text-white" />
                 </button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px]">
+              <SheetContent side="right" className="w-[300px] ">
                 <div className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item, index) => (
                     <motion.div

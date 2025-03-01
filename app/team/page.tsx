@@ -1,5 +1,6 @@
 "use client";
-import HauntedTestimonials from "@/components/ui/animated-testimonials";
+
+import HauntedTestimonials from "@/components/HauntedTestimonials";
 
 export default function TeamPage() {
   return (

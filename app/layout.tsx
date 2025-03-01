@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Creepster } from "next/font/google";
+import { Piedra } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/global/navbar";
 import ScaryBackground from "@/components/global/scarybg";
 import Footer from "@/components/global/footer";
 
-const geistSans = Creepster({
+const geistSans = Piedra({
   weight: "400",
   variable: "--font-regular",
   subsets: ["latin"],
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable}  antialiased bg-black`}>
+      <body className={`${geistSans.className}  antialiased bg-black`}>
         <ScaryBackground />
 
         <Navbar />
