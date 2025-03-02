@@ -153,6 +153,12 @@ const defaultTestimonials: Testimonial[] = [
     designation: "SY",
     src: "/team/23.png",
   },
+  {
+    quote: "Chakava Co-ordinator",
+    name: "Tushar Pawar",
+    designation: "SY",
+    src: "/team/tushar.png",
+  },
 ];
 
 const HauntedTestimonials = () => {
