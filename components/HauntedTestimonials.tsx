@@ -10,6 +10,12 @@ type Testimonial = {
 // Default testimonials data
 const defaultTestimonials: Testimonial[] = [
   {
+    quote: "Overall Co-ordinator",
+    name: "Visesh Chauhan",
+    designation: "TY",
+    src: "/team/visesh.png",
+  },
+  {
     quote: "Cyber Canvas Co-ordinator",
     name: "Krishna Patil",
     designation: "TY",
