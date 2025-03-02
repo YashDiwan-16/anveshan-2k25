@@ -13,7 +13,7 @@ export function CarouselDemo() {
       title: "Sambhashini",
       button: "Explore Sambhashini",
       link: "/events/sambhashini",
-      src: "/eventlogos/sambhashani.p ng",
+      src: "/eventlogos/sambhashani.png",
     },
     {
       title: "Logic Lamps",
