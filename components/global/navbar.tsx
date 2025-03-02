@@ -12,12 +12,10 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Events", href: "/events" },
     { name: "Team", href: "/team" },
-
-    { name: "Contact", href: "/contact" },
   ];
 
   return (
-    <nav className="fixed w-full z-50 backdrop-blur-md bg-black/20 pb-1">
+    <nav className="fixed w-full z-[1000] backdrop-blur-md bg-black/20 pb-1">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -51,14 +49,14 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <button className="p-2">
                   <Menu className="h-6 w-6 text-white" />
                 </button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] ">
+              <SheetContent side="right" className="w-[300px] z-[1000]">
                 <div className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item, index) => (
                     <motion.div
