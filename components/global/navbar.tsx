@@ -27,7 +27,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="text-2xl font-bold text-white">
-              Anveshan
+              ANVESHAN
             </Link>
           </motion.div>
 

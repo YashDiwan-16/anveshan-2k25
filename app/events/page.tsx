@@ -13,7 +13,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="text-4xl md:text-6xl font-bold text-center mb-12 text-red-500 drop-shadow-[0_0_10px_rgba(220,38,38,0.5)]"
       >
-        Anveshan 2025
+        ANVESHAN 2025
       </motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {events.map((event, index) => (
